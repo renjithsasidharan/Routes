@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94365F4D647D49849F44FB83 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD459A8186CAD930017E278 /* libPods.a */; };
 		FAB4CCFF186594980001D8CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CCFE186594980001D8CC /* Foundation.framework */; };
 		FAB4CD01186594980001D8CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD00186594980001D8CC /* CoreGraphics.framework */; };
 		FAB4CD03186594980001D8CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD02186594980001D8CC /* UIKit.framework */; };
@@ -22,17 +23,14 @@
 		FAB4CD20186594980001D8CC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD04186594980001D8CC /* CoreData.framework */; };
 		FAB4CD28186594980001D8CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB4CD26186594980001D8CC /* InfoPlist.strings */; };
 		FAB4CD2A186594980001D8CC /* RoutesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB4CD29186594980001D8CC /* RoutesTests.m */; };
-		FAB4CD341865B4890001D8CC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD331865B4890001D8CC /* CoreText.framework */; };
-		FAB4CD361865B4920001D8CC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD351865B4920001D8CC /* GLKit.framework */; };
-		FAB4CD381865B49E0001D8CC /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD371865B49E0001D8CC /* libc++.dylib */; };
-		FAB4CD3A1865B4A50001D8CC /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD391865B4A50001D8CC /* libicucore.dylib */; };
-		FAB4CD3C1865B4AC0001D8CC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD3B1865B4AC0001D8CC /* libz.dylib */; };
-		FAB4CD3E1865B4B90001D8CC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD3D1865B4B90001D8CC /* OpenGLES.framework */; };
-		FAB4CD401865B5270001D8CC /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD3F1865B5270001D8CC /* GoogleMaps.framework */; };
-		FAB4CD421865B5500001D8CC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAB4CD411865B5500001D8CC /* GoogleMaps.bundle */; };
 		FAB4CD451865B8D60001D8CC /* RMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB4CD441865B8D60001D8CC /* RMMapViewController.m */; };
 		FAB4CD4B1865BE7C0001D8CC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD4A1865BE7C0001D8CC /* ImageIO.framework */; };
 		FAB4CD4D1865BEE30001D8CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD4C1865BEE30001D8CC /* SystemConfiguration.framework */; };
+		FAD09244186C22A5001A3FE7 /* RMDirectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD09243186C22A5001A3FE7 /* RMDirectionService.m */; };
+		FAD0924B186C438F001A3FE7 /* RMDirectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0924A186C438F001A3FE7 /* RMDirectionModel.m */; };
+		FAD0924F186C4594001A3FE7 /* RMResourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0924E186C4594001A3FE7 /* RMResourceModel.m */; };
+		FAD09251186C4B24001A3FE7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAD09250186C4B24001A3FE7 /* Podfile */; };
+		FAD459A7186C81790017E278 /* RMJsonHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD459A6186C81790017E278 /* RMJsonHelpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51F254BD9AFA4F658C2AA66A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FAB4CCFB186594980001D8CC /* Routes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Routes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB4CCFE186594980001D8CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAB4CD00186594980001D8CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,19 +63,22 @@
 		FAB4CD25186594980001D8CC /* RoutesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoutesTests-Info.plist"; sourceTree = "<group>"; };
 		FAB4CD27186594980001D8CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAB4CD29186594980001D8CC /* RoutesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoutesTests.m; sourceTree = "<group>"; };
-		FAB4CD331865B4890001D8CC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		FAB4CD351865B4920001D8CC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		FAB4CD371865B49E0001D8CC /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		FAB4CD391865B4A50001D8CC /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		FAB4CD3B1865B4AC0001D8CC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		FAB4CD3D1865B4B90001D8CC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		FAB4CD3F1865B5270001D8CC /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		FAB4CD411865B5500001D8CC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		FAB4CD431865B8D60001D8CC /* RMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMMapViewController.h; path = MapView/RMMapViewController.h; sourceTree = "<group>"; };
 		FAB4CD441865B8D60001D8CC /* RMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMMapViewController.m; path = MapView/RMMapViewController.m; sourceTree = "<group>"; };
 		FAB4CD481865BD080001D8CC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		FAB4CD4A1865BE7C0001D8CC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		FAB4CD4C1865BEE30001D8CC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FAD09242186C22A5001A3FE7 /* RMDirectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMDirectionService.h; path = DirectionService/RMDirectionService.h; sourceTree = "<group>"; };
+		FAD09243186C22A5001A3FE7 /* RMDirectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMDirectionService.m; path = DirectionService/RMDirectionService.m; sourceTree = "<group>"; };
+		FAD09245186C358C001A3FE7 /* RMApiKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMApiKey.h; sourceTree = "<group>"; };
+		FAD09249186C438F001A3FE7 /* RMDirectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMDirectionModel.h; path = DirectionModel/RMDirectionModel.h; sourceTree = "<group>"; };
+		FAD0924A186C438F001A3FE7 /* RMDirectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMDirectionModel.m; path = DirectionModel/RMDirectionModel.m; sourceTree = "<group>"; };
+		FAD0924D186C4594001A3FE7 /* RMResourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMResourceModel.h; path = ResourceModel/RMResourceModel.h; sourceTree = "<group>"; };
+		FAD0924E186C4594001A3FE7 /* RMResourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMResourceModel.m; path = ResourceModel/RMResourceModel.m; sourceTree = "<group>"; };
+		FAD09250186C4B24001A3FE7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FAD459A5186C81790017E278 /* RMJsonHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMJsonHelpers.h; path = Utils/RMJsonHelpers.h; sourceTree = "<group>"; };
+		FAD459A6186C81790017E278 /* RMJsonHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMJsonHelpers.m; path = Utils/RMJsonHelpers.m; sourceTree = "<group>"; };
+		FAD459A8186CAD930017E278 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPods.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,17 +88,11 @@
 			files = (
 				FAB4CD4D1865BEE30001D8CC /* SystemConfiguration.framework in Frameworks */,
 				FAB4CD4B1865BE7C0001D8CC /* ImageIO.framework in Frameworks */,
-				FAB4CD3E1865B4B90001D8CC /* OpenGLES.framework in Frameworks */,
-				FAB4CD3C1865B4AC0001D8CC /* libz.dylib in Frameworks */,
-				FAB4CD3A1865B4A50001D8CC /* libicucore.dylib in Frameworks */,
-				FAB4CD381865B49E0001D8CC /* libc++.dylib in Frameworks */,
-				FAB4CD361865B4920001D8CC /* GLKit.framework in Frameworks */,
-				FAB4CD341865B4890001D8CC /* CoreText.framework in Frameworks */,
 				FAB4CD01186594980001D8CC /* CoreGraphics.framework in Frameworks */,
-				FAB4CD401865B5270001D8CC /* GoogleMaps.framework in Frameworks */,
 				FAB4CD05186594980001D8CC /* CoreData.framework in Frameworks */,
 				FAB4CD03186594980001D8CC /* UIKit.framework in Frameworks */,
 				FAB4CCFF186594980001D8CC /* Foundation.framework in Frameworks */,
+				94365F4D647D49849F44FB83 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,10 +113,12 @@
 		FAB4CCF2186594970001D8CC = {
 			isa = PBXGroup;
 			children = (
+				FAD09250186C4B24001A3FE7 /* Podfile */,
 				FAB4CD06186594980001D8CC /* Routes */,
 				FAB4CD23186594980001D8CC /* RoutesTests */,
 				FAB4CCFD186594980001D8CC /* Frameworks */,
 				FAB4CCFC186594980001D8CC /* Products */,
+				51F254BD9AFA4F658C2AA66A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,21 +134,14 @@
 		FAB4CCFD186594980001D8CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAB4CD4C1865BEE30001D8CC /* SystemConfiguration.framework */,
-				FAB4CD4A1865BE7C0001D8CC /* ImageIO.framework */,
+				FAD459A8186CAD930017E278 /* libPods.a */,
 				FAB4CD481865BD080001D8CC /* AdSupport.framework */,
-				FAB4CD411865B5500001D8CC /* GoogleMaps.bundle */,
-				FAB4CD3F1865B5270001D8CC /* GoogleMaps.framework */,
-				FAB4CD3D1865B4B90001D8CC /* OpenGLES.framework */,
-				FAB4CD3B1865B4AC0001D8CC /* libz.dylib */,
-				FAB4CD391865B4A50001D8CC /* libicucore.dylib */,
-				FAB4CD371865B49E0001D8CC /* libc++.dylib */,
-				FAB4CD351865B4920001D8CC /* GLKit.framework */,
-				FAB4CD331865B4890001D8CC /* CoreText.framework */,
-				FAB4CCFE186594980001D8CC /* Foundation.framework */,
-				FAB4CD00186594980001D8CC /* CoreGraphics.framework */,
-				FAB4CD02186594980001D8CC /* UIKit.framework */,
 				FAB4CD04186594980001D8CC /* CoreData.framework */,
+				FAB4CD00186594980001D8CC /* CoreGraphics.framework */,
+				FAB4CCFE186594980001D8CC /* Foundation.framework */,
+				FAB4CD4A1865BE7C0001D8CC /* ImageIO.framework */,
+				FAB4CD4C1865BEE30001D8CC /* SystemConfiguration.framework */,
+				FAB4CD02186594980001D8CC /* UIKit.framework */,
 				FAB4CD1C186594980001D8CC /* XCTest.framework */,
 			);
 			name = Frameworks;
@@ -159,9 +150,14 @@
 		FAB4CD06186594980001D8CC /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				FAD459A4186C815B0017E278 /* Utils */,
+				FAD0924C186C4572001A3FE7 /* ResourceModel */,
+				FAD09248186C436F001A3FE7 /* DirectionModel */,
+				FAD09241186C21E3001A3FE7 /* DirectionService */,
 				FAB4CD461865B9040001D8CC /* MapView */,
 				FAB4CD0F186594980001D8CC /* RMAppDelegate.h */,
 				FAB4CD10186594980001D8CC /* RMAppDelegate.m */,
+				FAD09245186C358C001A3FE7 /* RMApiKey.h */,
 				FAB4CD15186594980001D8CC /* Images.xcassets */,
 				FAB4CD12186594980001D8CC /* Routes.xcdatamodeld */,
 				FAB4CD07186594980001D8CC /* Supporting Files */,
@@ -207,6 +203,42 @@
 			name = MapView;
 			sourceTree = "<group>";
 		};
+		FAD09241186C21E3001A3FE7 /* DirectionService */ = {
+			isa = PBXGroup;
+			children = (
+				FAD09242186C22A5001A3FE7 /* RMDirectionService.h */,
+				FAD09243186C22A5001A3FE7 /* RMDirectionService.m */,
+			);
+			name = DirectionService;
+			sourceTree = "<group>";
+		};
+		FAD09248186C436F001A3FE7 /* DirectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAD09249186C438F001A3FE7 /* RMDirectionModel.h */,
+				FAD0924A186C438F001A3FE7 /* RMDirectionModel.m */,
+			);
+			name = DirectionModel;
+			sourceTree = "<group>";
+		};
+		FAD0924C186C4572001A3FE7 /* ResourceModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAD0924D186C4594001A3FE7 /* RMResourceModel.h */,
+				FAD0924E186C4594001A3FE7 /* RMResourceModel.m */,
+			);
+			name = ResourceModel;
+			sourceTree = "<group>";
+		};
+		FAD459A4186C815B0017E278 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAD459A5186C81790017E278 /* RMJsonHelpers.h */,
+				FAD459A6186C81790017E278 /* RMJsonHelpers.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAB4CD2D186594980001D8CC /* Build configuration list for PBXNativeTarget "Routes" */;
 			buildPhases = (
+				7CAA786C7D554D18B34D95D5 /* Check Pods Manifest.lock */,
 				FAB4CCF7186594980001D8CC /* Sources */,
 				FAB4CCF8186594980001D8CC /* Frameworks */,
 				FAB4CCF9186594980001D8CC /* Resources */,
+				70C36C47F5B84CE39A9F5792 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,8 +317,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB4CD421865B5500001D8CC /* GoogleMaps.bundle in Resources */,
 				FAB4CD0B186594980001D8CC /* InfoPlist.strings in Resources */,
+				FAD09251186C4B24001A3FE7 /* Podfile in Resources */,
 				FAB4CD16186594980001D8CC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,14 +333,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		70C36C47F5B84CE39A9F5792 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CAA786C7D554D18B34D95D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAB4CCF7186594980001D8CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAB4CD451865B8D60001D8CC /* RMMapViewController.m in Sources */,
+				FAD0924F186C4594001A3FE7 /* RMResourceModel.m in Sources */,
+				FAD459A7186C81790017E278 /* RMJsonHelpers.m in Sources */,
 				FAB4CD14186594980001D8CC /* Routes.xcdatamodeld in Sources */,
 				FAB4CD0D186594980001D8CC /* main.m in Sources */,
+				FAD0924B186C438F001A3FE7 /* RMDirectionModel.m in Sources */,
+				FAD09244186C22A5001A3FE7 /* RMDirectionService.m in Sources */,
 				FAB4CD11186594980001D8CC /* RMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,18 +496,23 @@
 		};
 		FAB4CD2E186594980001D8CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F254BD9AFA4F658C2AA66A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Developer/Renjith/projects/Routes,
+					"/Developer/Renjith/projects/Routes/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Routes/Routes-Prefix.pch";
 				INFOPLIST_FILE = "Routes/Routes-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/Renjith/projects/Routes,
+				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
@@ -445,18 +521,23 @@
 		};
 		FAB4CD2F186594980001D8CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F254BD9AFA4F658C2AA66A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Developer/Renjith/projects/Routes,
+					"/Developer/Renjith/projects/Routes/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Routes/Routes-Prefix.pch";
 				INFOPLIST_FILE = "Routes/Routes-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/Renjith/projects/Routes,
+				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
@@ -515,7 +596,7 @@
 				FAB4CD2C186594980001D8CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FAB4CD2D186594980001D8CC /* Build configuration list for PBXNativeTarget "Routes" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +605,7 @@
 				FAB4CD2F186594980001D8CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		FAB4CD30186594980001D8CC /* Build configuration list for PBXNativeTarget "RoutesTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +614,7 @@
 				FAB4CD32186594980001D8CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

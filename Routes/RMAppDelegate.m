@@ -9,6 +9,7 @@
 #import "RMAppDelegate.h"
 #import <GoogleMaps/GMSServices.h>
 #import "RMMapViewController.h"
+#import "RMApiKey.h"
 
 
 @implementation RMAppDelegate
@@ -21,7 +22,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    [GMSServices provideAPIKey:@"AIzaSyCFsXeSrYluy6kuMnjQfqyiEXb3fQ5sxeA"];
+    [GMSServices provideAPIKey:kApiKey];
     RMMapViewController *mapViewController = [[RMMapViewController alloc] init];
     [self.window setRootViewController:mapViewController];
     self.window.backgroundColor = [UIColor whiteColor];

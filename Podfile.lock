@@ -1,0 +1,18 @@
+PODS:
+  - CocoaLumberjack (1.7.0):
+    - CocoaLumberjack/Core
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.7.0)
+  - CocoaLumberjack/Extensions (1.7.0):
+    - CocoaLumberjack/Core
+  - Google-Maps-iOS-SDK (1.6.1)
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 1.7.0)
+  - Google-Maps-iOS-SDK (~> 1.6.1)
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: be87113f649942f020a37c061c58009b6ee5ff68
+  Google-Maps-iOS-SDK: 29876f757dd2c9b61236a0940e629005ad3ad811
+
+COCOAPODS: 0.29.0
