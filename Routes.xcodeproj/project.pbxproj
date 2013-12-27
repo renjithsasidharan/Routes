@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94365F4D647D49849F44FB83 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD459A8186CAD930017E278 /* libPods.a */; };
+		CA8293D7EE97411E8118F951 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 948C7FCC435B4124A2A2BDFE /* libPods.a */; };
+		FA5322FB186DC76F006F70DF /* RMDirectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5322FA186DC76F006F70DF /* RMDirectionService.m */; };
+		FA532300186DC781006F70DF /* RMDirectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5322FD186DC781006F70DF /* RMDirectionModel.m */; };
+		FA532301186DC781006F70DF /* RMResourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5322FF186DC781006F70DF /* RMResourceModel.m */; };
+		FA532304186DC794006F70DF /* RMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA532303186DC794006F70DF /* RMMapViewController.m */; };
+		FA53230A186DC819006F70DF /* RMLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA532309186DC819006F70DF /* RMLocationModel.m */; };
+		FA53230D186DEAAE006F70DF /* RMLocationMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA53230C186DEAAE006F70DF /* RMLocationMenuViewController.m */; };
 		FAB4CCFF186594980001D8CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CCFE186594980001D8CC /* Foundation.framework */; };
 		FAB4CD01186594980001D8CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD00186594980001D8CC /* CoreGraphics.framework */; };
 		FAB4CD03186594980001D8CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD02186594980001D8CC /* UIKit.framework */; };
@@ -23,12 +29,8 @@
 		FAB4CD20186594980001D8CC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD04186594980001D8CC /* CoreData.framework */; };
 		FAB4CD28186594980001D8CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB4CD26186594980001D8CC /* InfoPlist.strings */; };
 		FAB4CD2A186594980001D8CC /* RoutesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB4CD29186594980001D8CC /* RoutesTests.m */; };
-		FAB4CD451865B8D60001D8CC /* RMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB4CD441865B8D60001D8CC /* RMMapViewController.m */; };
 		FAB4CD4B1865BE7C0001D8CC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD4A1865BE7C0001D8CC /* ImageIO.framework */; };
 		FAB4CD4D1865BEE30001D8CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CD4C1865BEE30001D8CC /* SystemConfiguration.framework */; };
-		FAD09244186C22A5001A3FE7 /* RMDirectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD09243186C22A5001A3FE7 /* RMDirectionService.m */; };
-		FAD0924B186C438F001A3FE7 /* RMDirectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0924A186C438F001A3FE7 /* RMDirectionModel.m */; };
-		FAD0924F186C4594001A3FE7 /* RMResourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0924E186C4594001A3FE7 /* RMResourceModel.m */; };
 		FAD09251186C4B24001A3FE7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAD09250186C4B24001A3FE7 /* Podfile */; };
 		FAD459A7186C81790017E278 /* RMJsonHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD459A6186C81790017E278 /* RMJsonHelpers.m */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,19 @@
 
 /* Begin PBXFileReference section */
 		51F254BD9AFA4F658C2AA66A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		948C7FCC435B4124A2A2BDFE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5322F9186DC76F006F70DF /* RMDirectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMDirectionService.h; path = Service/RMDirectionService.h; sourceTree = "<group>"; };
+		FA5322FA186DC76F006F70DF /* RMDirectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMDirectionService.m; path = Service/RMDirectionService.m; sourceTree = "<group>"; };
+		FA5322FC186DC781006F70DF /* RMDirectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMDirectionModel.h; path = Model/RMDirectionModel.h; sourceTree = "<group>"; };
+		FA5322FD186DC781006F70DF /* RMDirectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMDirectionModel.m; path = Model/RMDirectionModel.m; sourceTree = "<group>"; };
+		FA5322FE186DC781006F70DF /* RMResourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMResourceModel.h; path = Model/RMResourceModel.h; sourceTree = "<group>"; };
+		FA5322FF186DC781006F70DF /* RMResourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMResourceModel.m; path = Model/RMResourceModel.m; sourceTree = "<group>"; };
+		FA532302186DC794006F70DF /* RMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMMapViewController.h; path = View/RMMapViewController.h; sourceTree = "<group>"; };
+		FA532303186DC794006F70DF /* RMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMMapViewController.m; path = View/RMMapViewController.m; sourceTree = "<group>"; };
+		FA532308186DC819006F70DF /* RMLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMLocationModel.h; path = Model/RMLocationModel.h; sourceTree = "<group>"; };
+		FA532309186DC819006F70DF /* RMLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMLocationModel.m; path = Model/RMLocationModel.m; sourceTree = "<group>"; };
+		FA53230B186DEAAE006F70DF /* RMLocationMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMLocationMenuViewController.h; path = View/RMLocationMenuViewController.h; sourceTree = "<group>"; };
+		FA53230C186DEAAE006F70DF /* RMLocationMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMLocationMenuViewController.m; path = View/RMLocationMenuViewController.m; sourceTree = "<group>"; };
 		FAB4CCFB186594980001D8CC /* Routes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Routes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB4CCFE186594980001D8CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAB4CD00186594980001D8CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,22 +78,13 @@
 		FAB4CD25186594980001D8CC /* RoutesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoutesTests-Info.plist"; sourceTree = "<group>"; };
 		FAB4CD27186594980001D8CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAB4CD29186594980001D8CC /* RoutesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoutesTests.m; sourceTree = "<group>"; };
-		FAB4CD431865B8D60001D8CC /* RMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMMapViewController.h; path = MapView/RMMapViewController.h; sourceTree = "<group>"; };
-		FAB4CD441865B8D60001D8CC /* RMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMMapViewController.m; path = MapView/RMMapViewController.m; sourceTree = "<group>"; };
 		FAB4CD481865BD080001D8CC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		FAB4CD4A1865BE7C0001D8CC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		FAB4CD4C1865BEE30001D8CC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		FAD09242186C22A5001A3FE7 /* RMDirectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMDirectionService.h; path = DirectionService/RMDirectionService.h; sourceTree = "<group>"; };
-		FAD09243186C22A5001A3FE7 /* RMDirectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMDirectionService.m; path = DirectionService/RMDirectionService.m; sourceTree = "<group>"; };
 		FAD09245186C358C001A3FE7 /* RMApiKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMApiKey.h; sourceTree = "<group>"; };
-		FAD09249186C438F001A3FE7 /* RMDirectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMDirectionModel.h; path = DirectionModel/RMDirectionModel.h; sourceTree = "<group>"; };
-		FAD0924A186C438F001A3FE7 /* RMDirectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMDirectionModel.m; path = DirectionModel/RMDirectionModel.m; sourceTree = "<group>"; };
-		FAD0924D186C4594001A3FE7 /* RMResourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMResourceModel.h; path = ResourceModel/RMResourceModel.h; sourceTree = "<group>"; };
-		FAD0924E186C4594001A3FE7 /* RMResourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMResourceModel.m; path = ResourceModel/RMResourceModel.m; sourceTree = "<group>"; };
 		FAD09250186C4B24001A3FE7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FAD459A5186C81790017E278 /* RMJsonHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMJsonHelpers.h; path = Utils/RMJsonHelpers.h; sourceTree = "<group>"; };
 		FAD459A6186C81790017E278 /* RMJsonHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMJsonHelpers.m; path = Utils/RMJsonHelpers.m; sourceTree = "<group>"; };
-		FAD459A8186CAD930017E278 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPods.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +98,7 @@
 				FAB4CD05186594980001D8CC /* CoreData.framework in Frameworks */,
 				FAB4CD03186594980001D8CC /* UIKit.framework in Frameworks */,
 				FAB4CCFF186594980001D8CC /* Foundation.framework in Frameworks */,
-				94365F4D647D49849F44FB83 /* libPods.a in Frameworks */,
+				CA8293D7EE97411E8118F951 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +116,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA5322F6186DC679006F70DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA5322FC186DC781006F70DF /* RMDirectionModel.h */,
+				FA5322FD186DC781006F70DF /* RMDirectionModel.m */,
+				FA532308186DC819006F70DF /* RMLocationModel.h */,
+				FA532309186DC819006F70DF /* RMLocationModel.m */,
+				FA5322FE186DC781006F70DF /* RMResourceModel.h */,
+				FA5322FF186DC781006F70DF /* RMResourceModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA5322F7186DC6A1006F70DF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FA5322F9186DC76F006F70DF /* RMDirectionService.h */,
+				FA5322FA186DC76F006F70DF /* RMDirectionService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		FA5322F8186DC6AB006F70DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA532302186DC794006F70DF /* RMMapViewController.h */,
+				FA532303186DC794006F70DF /* RMMapViewController.m */,
+				FA53230B186DEAAE006F70DF /* RMLocationMenuViewController.h */,
+				FA53230C186DEAAE006F70DF /* RMLocationMenuViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		FAB4CCF2186594970001D8CC = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +173,6 @@
 		FAB4CCFD186594980001D8CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAD459A8186CAD930017E278 /* libPods.a */,
 				FAB4CD481865BD080001D8CC /* AdSupport.framework */,
 				FAB4CD04186594980001D8CC /* CoreData.framework */,
 				FAB4CD00186594980001D8CC /* CoreGraphics.framework */,
@@ -143,6 +181,7 @@
 				FAB4CD4C1865BEE30001D8CC /* SystemConfiguration.framework */,
 				FAB4CD02186594980001D8CC /* UIKit.framework */,
 				FAB4CD1C186594980001D8CC /* XCTest.framework */,
+				948C7FCC435B4124A2A2BDFE /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,11 +189,10 @@
 		FAB4CD06186594980001D8CC /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				FA5322F8186DC6AB006F70DF /* View */,
+				FA5322F7186DC6A1006F70DF /* Service */,
+				FA5322F6186DC679006F70DF /* Model */,
 				FAD459A4186C815B0017E278 /* Utils */,
-				FAD0924C186C4572001A3FE7 /* ResourceModel */,
-				FAD09248186C436F001A3FE7 /* DirectionModel */,
-				FAD09241186C21E3001A3FE7 /* DirectionService */,
-				FAB4CD461865B9040001D8CC /* MapView */,
 				FAB4CD0F186594980001D8CC /* RMAppDelegate.h */,
 				FAB4CD10186594980001D8CC /* RMAppDelegate.m */,
 				FAD09245186C358C001A3FE7 /* RMApiKey.h */,
@@ -192,42 +230,6 @@
 				FAB4CD26186594980001D8CC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FAB4CD461865B9040001D8CC /* MapView */ = {
-			isa = PBXGroup;
-			children = (
-				FAB4CD431865B8D60001D8CC /* RMMapViewController.h */,
-				FAB4CD441865B8D60001D8CC /* RMMapViewController.m */,
-			);
-			name = MapView;
-			sourceTree = "<group>";
-		};
-		FAD09241186C21E3001A3FE7 /* DirectionService */ = {
-			isa = PBXGroup;
-			children = (
-				FAD09242186C22A5001A3FE7 /* RMDirectionService.h */,
-				FAD09243186C22A5001A3FE7 /* RMDirectionService.m */,
-			);
-			name = DirectionService;
-			sourceTree = "<group>";
-		};
-		FAD09248186C436F001A3FE7 /* DirectionModel */ = {
-			isa = PBXGroup;
-			children = (
-				FAD09249186C438F001A3FE7 /* RMDirectionModel.h */,
-				FAD0924A186C438F001A3FE7 /* RMDirectionModel.m */,
-			);
-			name = DirectionModel;
-			sourceTree = "<group>";
-		};
-		FAD0924C186C4572001A3FE7 /* ResourceModel */ = {
-			isa = PBXGroup;
-			children = (
-				FAD0924D186C4594001A3FE7 /* RMResourceModel.h */,
-				FAD0924E186C4594001A3FE7 /* RMResourceModel.m */,
-			);
-			name = ResourceModel;
 			sourceTree = "<group>";
 		};
 		FAD459A4186C815B0017E278 /* Utils */ = {
@@ -371,13 +373,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB4CD451865B8D60001D8CC /* RMMapViewController.m in Sources */,
-				FAD0924F186C4594001A3FE7 /* RMResourceModel.m in Sources */,
+				FA5322FB186DC76F006F70DF /* RMDirectionService.m in Sources */,
+				FA532300186DC781006F70DF /* RMDirectionModel.m in Sources */,
+				FA53230A186DC819006F70DF /* RMLocationModel.m in Sources */,
 				FAD459A7186C81790017E278 /* RMJsonHelpers.m in Sources */,
+				FA532301186DC781006F70DF /* RMResourceModel.m in Sources */,
+				FA532304186DC794006F70DF /* RMMapViewController.m in Sources */,
+				FA53230D186DEAAE006F70DF /* RMLocationMenuViewController.m in Sources */,
 				FAB4CD14186594980001D8CC /* Routes.xcdatamodeld in Sources */,
 				FAB4CD0D186594980001D8CC /* main.m in Sources */,
-				FAD0924B186C438F001A3FE7 /* RMDirectionModel.m in Sources */,
-				FAD09244186C22A5001A3FE7 /* RMDirectionService.m in Sources */,
 				FAB4CD11186594980001D8CC /* RMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -539,6 +544,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

@@ -10,6 +10,15 @@
 #import <GoogleMaps/GMSServices.h>
 #import "RMMapViewController.h"
 #import "RMApiKey.h"
+#import <DDLog.h>
+#import <DDFileLogger.h>
+#import <DDTTYLogger.h>
+
+#ifdef DEBUG
+    static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+#else
+    static const int ddLogLevel = LOG_LEVEL_WARN;
+#endif
 
 
 @implementation RMAppDelegate
@@ -24,9 +33,19 @@
     // Override point for customization after application launch.
     [GMSServices provideAPIKey:kApiKey];
     RMMapViewController *mapViewController = [[RMMapViewController alloc] init];
-    [self.window setRootViewController:mapViewController];
+    UINavigationController *navController  = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+    [self.window setRootViewController:navController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    DDFileLogger* fileLogger = [[DDFileLogger alloc] init];
+    fileLogger.rollingFrequency = 60 * 60 * 24;
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 1;
+    [DDLog addLogger:fileLogger];
+
+    DDLogInfo(@"log file at: %@", [fileLogger.logFileManager logsDirectory]);
+    
     return YES;
 }
 
